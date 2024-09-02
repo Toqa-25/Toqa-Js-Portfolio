@@ -1,0 +1,254 @@
+/* Root value */
+:root{
+    --main-color:#fbb519;
+    --section-padding:50px;
+}
+/* global value */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* my  style */
+body{
+    font-family: 'Merriweather', serif;
+    background-color: black;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    color:var(--main-color)
+}
+.section{
+    padding-bottom: var(--section-padding);
+}
+.container
+{
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+ .section h5{
+    text-align: center;
+    font-family: 'Lobster';
+
+ }
+
+@media (min-width: 576px) {
+ .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+   .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+   .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+ .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+   .container {
+    max-width: 1320px;
+  }
+} 
+ /* start header part */
+ header{
+    font-family: 'Lobster', cursive;
+ 
+   /* background-image: url(../images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg);
+   background-size: cover;*/
+ } 
+ nav{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black; */
+ }
+  nav img{
+     margin-top:10px;
+ }
+ nav .list{
+     width: 50%;
+    margin-top:20px;
+    list-style: none;
+    color:var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 20px;
+ }
+ nav .list li{
+  /* padding:5px; */
+  font-size: 30px;
+ }
+ nav .list li:hover{
+  /* padding:5px; */
+  font-size: 30px;
+ }
+ @media (max-width: 768px){
+  nav .list {
+      display: none;
+  }
+  div{
+      display: block;
+      padding: 15px;
+  }
+  .quik h2{
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .quik img{
+    width: 100px;
+    height: 100px;
+ }
+}
+ @media (min-width: 768px){
+     nav div{
+         display: none;
+        
+     }
+ }
+ div:hover  .hidden {
+     display: block;
+     color:var(--main-color);
+     position: absolute;
+     right: 44px;
+     top: 37px;
+     background-color: #f5f5dc91;
+     list-style: none;
+     border-radius: 8px;
+     padding: 10px;
+   
+ }
+ .hidden{
+    display: none;
+
+}
+.hidden li:hover{
+ padding: 5px;
+ font-size: 25px;
+}
+ .quik{
+    color: var(--main-color);
+    text-align: center;
+    /* background-image: url(../images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg); */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'Bebas Neue', cursive; */
+     /* font-family: 'Oswald', sans-serif; */
+     font-family: 'Lobster', cursive;
+ 
+
+ }
+ .quik img{
+     width: 200px;
+     height: 200px;
+     border:3px solid;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     margin-bottom: 10px;
+}
+ h2{
+    color: #dad3d3;
+    text-transform: uppercase;
+    line-height: 3rem;
+ }
+ span{
+     color:var(--main-color)
+ }
+ .card-groups{
+     display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+ }
+ .work h5{
+    text-align: center;
+    font-family: 'Lobster';
+ }
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: black;
+    background-clip: border-box;
+    border: 4px solid var(--main-color);
+    border-radius: 0.3rem;
+}
+
+.card img{
+    max-width:100%;
+    max-height: 150px;
+    border-bottom: 3px solid;
+}
+.card img:hover{
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   -o-transform: scale(1.1);
+}
+.card p{
+    margin-bottom: 1rem;
+    background-color: black;
+    font-size: 10px;
+    padding: 2px;
+    margin: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color:#483705;
+    background-color: #f5f5dce8;
+    padding-top: 10px;
+
+}
+.card p a{
+    text-decoration: none;
+    color: #e2bc66;
+    font-weight: bolder;
+}
+.card p:hover{
+  
+}
+
+.card button{
+    width: 95px;
+    text-align: center;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 7px;
+}
+.card button:hover{
+    width:120px;
+    padding: 10px;
+}
+.card button a{
+    text-decoration: none;
+    color: #483705;
+}
+
+.about{
+    text-align: center;
+   
+}
